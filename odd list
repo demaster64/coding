@@ -1,0 +1,16 @@
+import random
+
+something = []
+thing = 0
+other_something = []
+
+for x in range (500):
+    num = random.randrange(1, 500)
+    something.append(num)
+
+for x in range(500):
+    if something[thing] % 2 == 1: 
+        other_something.append(something[thing])
+    thing=thing+1
+
+print(other_something)
